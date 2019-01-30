@@ -9,8 +9,16 @@
     <input type="checkbox" name="owner[pet_ids][]" id="<%= pet.id%>" value="<%=pet.id%>" <%='checked' if @owner.pets.include?(pet) %>><%=pet.name%></input>
   <%end%>
   <br><br>
+<<<<<<< HEAD
   <label>and/or, create a new pet:</label><br>
   <label>Pet Name:</label><br>
     <input  type="text" name="pet[name]" id="pet_name"></input><br>
+=======
+  <label>and/or, create a new pet:</label>
+  <br>
+  <label>Pet Name:</label><br>
+    <input  type="text" name="pet[name]" id="pet_name"></input>
+  <br>
+>>>>>>> e9e9dc8f537d0761065c466f2df3b06d085d2e96
   <input type="submit" value="Update Owner">
 </form>
